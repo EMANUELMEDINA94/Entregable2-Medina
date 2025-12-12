@@ -1,0 +1,60 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Simulador Banco - Entrega 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>Simulador de Banco</h1>
+        <p>Entrega N°2</p>
+
+        <!-- MENSAJES -->
+        <div id="mensaje" class="mensaje"></div>
+
+        <!-- LOGIN -->
+        <section id="loginBox" class="box">
+            <h2>Ingresá a tu cuenta</h2>
+            <form id="formLogin">
+                <input id="loginUsuario" type="text" placeholder="Usuario" required />
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
+
+        <!-- CREAR CUENTA  -->
+        <section id="registroBox" class="box">
+            <h2>Crear cuenta</h2>
+            <form id="formRegistro">
+                <input id="regUsuario" type="text" placeholder="Nuevo usuario" required />
+                <input id="regSaldo" type="number" min="0" step="1" placeholder="Saldo inicial" required />
+                <button type="submit">Crear</button>
+            </form>
+        </section>
+
+        <!-- PANEL DE CUENTA -->
+        <section id="cuentaBox" class="box hidden">
+            <div class="row">
+                <h2>Cuenta activa</h2>
+                <button id="btnLogout" class="ghost">Cerrar sesión</button>
+            </div>
+
+            <p><strong>Usuario:</strong> <span id="usuarioActual">-</span></p>
+            <p><strong>Saldo:</strong> <span id="saldoActual">$0</span></p>
+
+            <div class="acciones">
+                <button id="btnConsultar">Consultar saldo</button>
+
+                <form id="formRetiro" class="inline">
+                    <input id="montoRetiro" type="number" min="1" step="1" placeholder="Monto a retirar" required />
+                    <button type="submit" class="danger">Retirar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
