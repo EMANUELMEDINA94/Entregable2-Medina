@@ -1,0 +1,20 @@
+[
+    {
+        "usuario": "emanuel",
+        "pin": "1234",
+        "saldo": 150000,
+        "movimientos": []
+    },
+    {
+        "usuario": "rodrigo",
+        "pin": "1234",
+        "saldo": 90000,
+        "movimientos": []
+    },
+    {
+        "usuario": "paula",
+        "pin": "1234",
+        "saldo": 120000,
+        "movimientos": []
+    }
+]
